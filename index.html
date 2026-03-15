@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SpellShot — Privacy Policy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #080112;
+      --bg2: #0D0221;
+      --purple: #6B21A8;
+      --purple-light: #AA88CC;
+      --purple-bright: #7C3AED;
+      --gold: #D3A625;
+      --white: #F0EAF8;
+      --white-dim: rgba(240,234,248,0.6);
+      --white-faint: rgba(240,234,248,0.15);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background-color: var(--bg);
+      color: var(--white);
+      font-family: 'Crimson Pro', Georgia, serif;
+      font-size: 18px;
+      line-height: 1.8;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Decorative orbs */
+    body::before {
+      content: '';
+      position: fixed;
+      top: -120px; left: -80px;
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(108,33,168,0.22) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    body::after {
+      content: '';
+      position: fixed;
+      bottom: -100px; right: -80px;
+      width: 350px; height: 350px;
+      background: radial-gradient(circle, rgba(124,58,237,0.15) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 60px 32px 100px;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      margin-bottom: 64px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid var(--white-faint);
+      position: relative;
+    }
+
+    .logo-emoji {
+      font-size: 52px;
+      display: block;
+      margin-bottom: 16px;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    header h1 {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(28px, 5vw, 42px);
+      font-weight: 700;
+      letter-spacing: 4px;
+      color: var(--white);
+      margin-bottom: 6px;
+    }
+
+    header h1 span {
+      color: var(--gold);
+    }
+
+    .subtitle {
+      font-family: 'Cinzel', serif;
+      font-size: 13px;
+      letter-spacing: 3px;
+      color: var(--purple-light);
+      text-transform: uppercase;
+      margin-top: 8px;
+    }
+
+    .effective-date {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 6px 18px;
+      border: 1px solid rgba(170,136,204,0.3);
+      border-radius: 20px;
+      font-size: 13px;
+      color: var(--purple-light);
+      letter-spacing: 1px;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 52px;
+    }
+
+    h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+      padding-left: 16px;
+      border-left: 2px solid var(--purple-bright);
+      line-height: 1.4;
+    }
+
+    p {
+      color: var(--white-dim);
+      margin-bottom: 14px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 14px;
+    }
+
+    ul li {
+      color: var(--white-dim);
+      padding: 6px 0 6px 24px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '✦';
+      position: absolute;
+      left: 0;
+      color: var(--purple-bright);
+      font-size: 10px;
+      top: 10px;
+    }
+
+    /* Highlight box */
+    .highlight {
+      background: rgba(108,33,168,0.12);
+      border: 1px solid rgba(124,58,237,0.3);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 20px 0;
+    }
+
+    .highlight p {
+      margin: 0;
+      color: var(--white-dim);
+    }
+
+    /* Contact */
+    .contact-box {
+      background: linear-gradient(135deg, rgba(108,33,168,0.15), rgba(13,2,33,0.8));
+      border: 1px solid rgba(170,136,204,0.25);
+      border-radius: 16px;
+      padding: 28px 32px;
+      text-align: center;
+    }
+
+    .contact-box p {
+      margin-bottom: 8px;
+    }
+
+    .contact-box a {
+      color: var(--gold);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(211,166,37,0.4);
+      transition: border-color 0.2s;
+    }
+
+    .contact-box a:hover {
+      border-color: var(--gold);
+    }
+
+    /* Divider */
+    .divider {
+      text-align: center;
+      color: var(--purple-light);
+      opacity: 0.4;
+      font-size: 20px;
+      letter-spacing: 12px;
+      margin: 48px 0;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding-top: 40px;
+      border-top: 1px solid var(--white-faint);
+      font-size: 13px;
+      color: rgba(170,136,204,0.4);
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 600px) {
+      .container { padding: 40px 20px 80px; }
+      h2 { font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <span class="logo-emoji">✨</span>
+      <h1>Spell<span>Shot</span></h1>
+      <p class="subtitle">Privacy Policy</p>
+      <span class="effective-date">Effective Date: March 15, 2026</span>
+    </header>
+
+    <section>
+      <h2>Overview</h2>
+      <p>SpellShot ("we", "our", or "the app") is an AI-powered photo transformation app. This Privacy Policy explains what information we collect, how we use it, and your rights as a user.</p>
+      <p>By using SpellShot, you agree to the practices described in this policy.</p>
+    </section>
+
+    <div class="divider">· · ·</div>
+
+    <section>
+      <h2>Information We Collect</h2>
+      <ul>
+        <li><strong>Anonymous User ID</strong> — We assign each user an anonymous identifier via Firebase Authentication. No name, email, or personal details are required.</li>
+        <li><strong>Photos</strong> — When you use the transformation feature, your selected photo is temporarily sent to our AI processing service (Replicate) to generate the wizard image. We do not store your original photos on our servers.</li>
+        <li><strong>Credit Balance</strong> — Your in-app credit balance is stored in Firebase Firestore, linked only to your anonymous ID.</li>
+        <li><strong>Usage Data</strong> — Basic usage statistics such as number of transformations performed are stored anonymously.</li>
+        <li><strong>Purchase Data</strong> — In-app purchases are processed by Apple. We only receive confirmation of a successful purchase to add credits to your account.</li>
+      </ul>
+    </section>
+
+    <div class="divider">· · ·</div>
+
+    <section>
+      <h2>How We Use Your Information</h2>
+      <ul>
+        <li>To process and return your AI wizard photo transformation</li>
+        <li>To manage your credit balance across sessions</li>
+        <li>To verify and fulfill in-app purchases</li>
+        <li>To improve app performance and user experience</li>
+      </ul>
+      <div class="highlight">
+        <p>We do not sell, rent, or share your personal information with third parties for marketing purposes.</p>
+      </div>
+    </section>
+
+    <div class="divider">· · ·</div>
+
+    <section>
+      <h2>Third-Party Services</h2>
+      <p>SpellShot uses the following third-party services:</p>
+      <ul>
+        <li><strong>Firebase (Google)</strong> — Anonymous authentication and data storage. <a href="https://firebase.google.com/support/privacy" style="color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(211,166,37,0.4);">Privacy Policy</a></li>
+        <li><strong>Replicate</strong> — AI image processing. Your photo is sent to Replicate's servers for transformation and is not retained after processing. <a href="https://replicate.com/privacy" style="color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(211,166,37,0.4);">Privacy Policy</a></li>
+        <li><strong>Apple In-App Purchase</strong> — Payment processing for credit purchases. <a href="https://www.apple.com/legal/privacy/" style="color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(211,166,37,0.4);">Privacy Policy</a></li>
+      </ul>
+    </section>
+
+    <div class="divider">· · ·</div>
+
+    <section>
+      <h2>Data Retention</h2>
+      <p>Your anonymous user data (credit balance, usage count) is retained as long as you use the app. If you uninstall the app and reinstall it, a new anonymous ID is created and previous data is no longer accessible.</p>
+      <p>Photos submitted for transformation are processed in real-time and are not stored on our servers after the transformation is complete.</p>
+    </section>
+
+    <div class="divider">· · ·</div>
+
+    <section>
+      <h2>Children's Privacy</h2>
+      <p>SpellShot is not directed at children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us and we will delete it promptly.</p>
+    </section>
+
+    <div class="divider">· · ·</div>
+
+    <section>
+      <h2>Your Rights</h2>
+      <ul>
+        <li>You may request deletion of your anonymous data by contacting us</li>
+        <li>You may opt out of the app at any time by uninstalling it</li>
+        <li>You may contact us with any privacy-related concerns</li>
+      </ul>
+    </section>
+
+    <div class="divider">· · ·</div>
+
+    <section>
+      <h2>Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated effective date. Continued use of the app after changes constitutes your acceptance of the new policy.</p>
+    </section>
+
+    <div class="divider">· · ·</div>
+
+    <section>
+      <h2>Contact Us</h2>
+      <div class="contact-box">
+        <p>If you have any questions about this Privacy Policy, please contact us:</p>
+        <p><a href="mailto:dontmakeujessejames@gmail.com">dontmakeujessejames@gmail.com</a></p>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 SpellShot · All rights reserved</p>
+    </footer>
+
+  </div>
+</body>
+</html>
